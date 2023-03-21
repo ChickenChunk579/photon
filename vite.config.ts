@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import FullReload from 'vite-plugin-full-reload'
 
 const mobile =
   process.env.TAURI_PLATFORM === "android" ||
@@ -7,7 +8,10 @@ const mobile =
 
 // https://vitejs.dev/config/
 export default defineConfig(async () => ({
-  plugins: [react()],
+  plugins: [
+    react(),
+    FullReload(['*'])
+  ],
 
   // Vite options tailored for Tauri development and only applied in `tauri dev` or `tauri build`
   // prevent vite from obscuring rust errors
@@ -15,8 +19,7 @@ export default defineConfig(async () => ({
   // tauri expects a fixed port, fail if that port is not available
   server: {
     port: 1420,
-    strictPort: true,
-    hmr: { overlay: false }
+    strictPort: true
   },
 
   resolve: {

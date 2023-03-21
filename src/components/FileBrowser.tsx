@@ -1,4 +1,4 @@
-import './styles/StatusBar.scss';
+import './styles/FileBrowser.scss';
 
 function FileBrowser() {
     return ( <div className="fileBrowser">

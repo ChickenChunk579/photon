@@ -2,20 +2,18 @@
 
 .fileBrowser {
     position: fixed;
-    width: auto;
-    height: 100%;
-    background-color: $nord5;
-    bottom: 0px;
 
-    display: flex;
-    justify-content: left;
-    align-items: center;
-
-    padding: 5px;
+    /* or absolute, depending on your use case */
+    height: 100vh;
+    width: 250px;
+    background-color: $nord3;
+    /* or any other background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* optional box shadow */
 }
 
 .fileBrowserItem {
     font-family: monospace;
 
-    color: $nord0;
+    color: $nord5;
 }

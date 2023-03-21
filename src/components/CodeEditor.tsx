@@ -1,8 +1,11 @@
 import { Monaco, useMonaco } from "@monaco-editor/react";
 import MonacoEditor from "@monaco-editor/react";
 import { editor } from "monaco-editor";
+import { useRef } from "react";
+import './styles/CodeEditor.scss';
 
 function CodeEditor() {
+
   const monaco = useMonaco();
 
   monaco?.editor.defineTheme("nord", {
@@ -102,21 +105,21 @@ function CodeEditor() {
   monaco?.editor.setTheme("nord");
 
   var options: editor.IStandaloneEditorConstructionOptions = {
-    
+
   }
 
   return (
-    <div className="float-right">
+    <div className="codeEditor">
       <MonacoEditor
         height="97.5vh"
         defaultLanguage="javascript"
         defaultValue=""
-        className="codeEditor"
         theme="nord"
         options={options}
-        width="auto"
+        width="100%"
       />
     </div>
+
   );
 }
 

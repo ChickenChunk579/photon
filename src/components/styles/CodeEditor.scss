@@ -1,12 +1,10 @@
 @import "~nord/src/sass/nord.scss";
 
 .codeEditor {
-    width: 100px;
+    width: calc(100% - 250px);
     height: 100%;
-    padding: 10px;
-}
 
-.float-right {
-    display: flex;
-    justify-content: flex-end;
+    position: fixed;
+
+    right: 0px;
 }

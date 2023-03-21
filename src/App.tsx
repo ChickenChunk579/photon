@@ -6,12 +6,14 @@ import FileBrowser from "./components/FileBrowser";
 function App() {
   return (
     <div>
-      <div className="viewport">
-        <FileBrowser />
-        <CodeEditor />
-      </div>
+      <FileBrowser />
+      <CodeEditor />
+
+
+
 
       <StatusBar />
+
     </div>
   );
 }
