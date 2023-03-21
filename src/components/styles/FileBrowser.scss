@@ -1,0 +1,21 @@
+@import "~nord/src/sass/nord.scss";
+
+.fileBrowser {
+    position: fixed;
+    width: auto;
+    height: 100%;
+    background-color: $nord5;
+    bottom: 0px;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    padding: 5px;
+}
+
+.fileBrowserItem {
+    font-family: monospace;
+
+    color: $nord0;
+}
