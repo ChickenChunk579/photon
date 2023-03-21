@@ -3,9 +3,10 @@ on:
   push:
     branches:
       - release
+  workflow_dispatch:
 
 jobs:
-  workflow_dispatch:
+  build:
     permissions:
       contents: write
     strategy:
