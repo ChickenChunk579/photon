@@ -4,11 +4,13 @@
     position: fixed;
 
     /* or absolute, depending on your use case */
-    height: 100vh;
+    height: calc(100vh - 30px);
     width: 250px;
     background-color: $nord3;
     /* or any other background color */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    bottom: 0px;
     /* optional box shadow */
 }
 

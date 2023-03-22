@@ -2,9 +2,10 @@
 
 .codeEditor {
     width: calc(100% - 250px);
-    height: 100%;
+    height: calc(100% - 30px);
 
     position: fixed;
 
     right: 0px;
+    bottom: 0px;
 }
